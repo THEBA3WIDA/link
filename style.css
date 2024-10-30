@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em; /* Increased padding for better spacing */
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+  font-size: 1.8em; /* Slightly larger for prominence */
+  font-weight: bold;
+  letter-spacing: 1px; /* Added spacing for a modern look */
+}
+
+.nav button {
+  margin-left: 1em;
+  padding: 0.7em 1.5em; /* Increased padding for better click area */
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for a modern feel */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav button:hover {
+  background-color: #777;
+}
+
+/* Main Sections */
+main {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+section {
+  padding: 2em;
+  text-align: center;
+  margin-top: 1.5rem; /* Increased spacing between sections */
+  flex: 1;
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.2s; /* Smooth scaling effect on hover */
+}
+
+section:hover {
+  transform: scale(1.02); /* Slightly enlarge section on hover */
+}
+
+.hero {
+  background-color: #f4f4f4;
+}
+
+.good-stuff {
+  background-color: #e2e2e2;
+}
+
+.job-listings {
+  background-color: #d0d0d0;
+  height: 15rem; /* Optional height for uniformity */
+}
+
+.login {
+  background-color: #c2c2c2;
+  height: 15rem; /* Optional height for uniformity */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2em; /* Increased space above footer */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1em; /* Reduce padding */
+  }
+
+  .nav {
+    width: 100%; /* Make nav full width */
+    display: flex;
+    justify-content: space-between; /* Spread buttons evenly */
+    margin-top: 1em; /* Add some space above nav */
+  }
+
+  .nav button {
+    margin-left: 0; /* Remove left margin for buttons */
+    flex: 1; /* Allow buttons to grow equally */
+    margin-right: 0.5em; /* Space between buttons */
+  }
+
+  main {
+    padding: 1em; /* Reduce padding for main on mobile */
+  }
+
+  section {
+    padding: 1.5em; /* Reduce padding for sections on mobile */
+    margin-top: 1rem; /* Adjust margin between sections */
+    height: auto; /* Remove fixed height for sections */
+  }
+
+  .hero,
+  .good-stuff,
+  .job-listings,
+  .login {
+    height: auto; /* Allow sections to adapt to content */
+  }
+}
